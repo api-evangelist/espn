@@ -1,0 +1,84 @@
+{
+    "name": "ESPN",
+    "description": "Visit ESPN to get up-to-the-minute sports news coverage, scores, highlights and commentary for NFL, MLB, NBA, College Football, NCAA Basketball and more.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/191-espn.jpg",
+    "tags": [
+        "api provider",
+        "baseball",
+        "basketball",
+        "broadcasts",
+        "football",
+        "have api",
+        "have swagger",
+        "hockey"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/espn\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "ESPN",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/191-espn.jpg",
+            "humanURL": "http:\/\/developer.espn.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/espn-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/espn.json"
+                }
+            ]
+        },
+        {
+            "name": "ESPN APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/191-espn.jpg",
+            "humanURL": "http:\/\/developer.espn.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/espn-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/espn-apis.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/developer.espn.com\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/espn"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/espn"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/espnapi"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/191-2019-09-04-03-37-01.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/espn"
+        }
+    ]
+}
