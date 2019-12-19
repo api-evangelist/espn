@@ -1,0 +1,914 @@
+{
+    "id": "ba194a4b77738121ce8ce3efeb5af24e",
+    "name": "ESPN APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b5ab2c44496b4b710415b09dc00b83f0",
+            "name": "Sports and leagues supported in the ESPN API.",
+            "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "9109a4b3727b6705ff090ad340736c20",
+            "name": "Latest sports news and analysis from ESPN.",
+            "url": "http:\/\/www.espn.com\/\/{newsSection}\/{sportName}\/{leagueName}\/news\/{method}\/{headlineId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "newsSection",
+                    "description": "News section",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "method",
+                    "description": "Type of stories to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "headlineId",
+                    "description": "ID of specific story to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dates",
+                    "description": "Used to retrieve stories from a specific date, in YYYYMMDD format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "teams",
+                    "description": "Retrieve stories about a particular team (teamId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "athletes",
+                    "description": "Retrieves stories about a particular player\/athlete (athleteId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "events",
+                    "description": "Retrieves stories about a particular event (eventId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enable",
+                    "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "disable",
+                    "description": "Comma separated list of node names to disable. Currently supports these values: audio, categories, keywords, mobileStory, related, and story.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "insider",
+                    "description": "Toggles whether or not to include premium (ESPN Insider) content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language to receive content in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "region",
+                    "description": "Region of editorial focus. Only applicable for soccer and spanish language content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of results returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset from zero of where to start results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "34139112e89360e68833a69223959567",
+            "name": "Athlete stats and information from ESPN.",
+            "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/athletes\/{athleteId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "athleteId",
+                    "description": "Specific athlete ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groups",
+                    "description": "Used to specify a specific group or division within the league\/organizing body.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enable",
+                    "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language to receive content in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of results returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset from zero of where to start results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c494c51a60554d038f1ee38fa8861fe",
+            "name": "Sports team stats and information from ESPN.",
+            "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/teams\/{teamId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "teamId",
+                    "description": "Specific team ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enable",
+                    "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groups",
+                    "description": "Used to specify a specific group or division within the league\/organizing body.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rostertype",
+                    "description": "Can be used to specify full or active roster. Only applicable to MLB. Subject to access tier.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dates",
+                    "description": "Used to retrieve stories from a specific date, in YYYYMMDD format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language to receive content in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of results returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset from zero of where to start results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "74ff373139feae28bf8b684eb4938e4c",
+            "name": "Stream of the latest content published on ESPN.com...",
+            "url": "http:\/\/www.espn.com\/\/now\/{method}",
+            "description": "Stream of the latest content published on ESPN.com .",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "method",
+                    "description": "Type of stories to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagues",
+                    "description": "String denoting a particular sport category or sports league\/organizing body. Not applicable to \/top and \/popular methods.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "content",
+                    "description": "Content types to retrieve. Not applicable to \/top and \/popular methods.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "teams",
+                    "description": "Retrieve stories about a particular team (teamId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "58ffc66c6072d17be7bbdc4809a68d9f",
+            "name": "The latest league and divisional standings from ES...",
+            "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/standings",
+            "description": "The latest league and divisional standings from ESPN.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enable",
+                    "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "groups",
+                    "description": "Used to specify a specific group or division within the league\/organizing body.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dates",
+                    "description": "Used to retrieve stories from a specific date, in YYYYMMDD format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "seasontype",
+                    "description": "Value corresponding to either preseason, regular season, or postseason games. Accepts string (pre\/reg\/post) values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "flat",
+                    "description": "Returns a flattened result set in order to show all teams ranked from first to last without breaking them out into divisions. Only valid with team-based sports.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language to receive content in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of results returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset from zero of where to start results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d535e8056d1945cedd62afbfe6b874d",
+            "name": "Exclusive factoids produced by ESPN's Stats and In...",
+            "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/news\/notes\/{noteId}",
+            "description": "Exclusive factoids produced by ESPN's Stats and Information Group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "teams",
+                    "description": "Retrieve stories about a particular team (teamId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "athletes",
+                    "description": "Retrieves stories about a particular player\/athlete (athleteId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "events",
+                    "description": "Retrieves stories about a particular event (eventId)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "noteId",
+                    "description": "Retrieve content for a specific note.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dates",
+                    "description": "Used to retrieve stories from a specific date, in YYYYMMDD format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of results returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset from zero of where to start results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "1277e04489e1d0c5ab6a5f79638da525",
+            "name": "Medal counts and competition information from the ...",
+            "url": "http:\/\/www.espn.com\/\/sports\/olympics\/medals",
+            "description": "Medal counts and competition information from the Olympic Games.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "dates",
+                    "description": "Used to retrieve stories from a specific date, in YYYYMMDD format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "season",
+                    "description": "The season of the Olympic Games. Supported values are summer or winter.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enable",
+                    "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language to receive content in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limits the number of results returned.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset from zero of where to start results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "3093a6670b8c1cd01edb9c584cd392c5",
+            "name": "Audio podcasts and clips from ESPN.",
+            "url": "http:\/\/www.espn.com\/\/audio\/{method}\/{podcastId}\/{recordingId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "method",
+                    "description": "Type of stories to retrieve.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "podcastId",
+                    "description": "Specific Podcast ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "recordingId",
+                    "description": "Specific audio recording (clip) ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "insider",
+                    "description": "Toggles whether or not to include premium (ESPN Insider) content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c0a4217e57aaf1091d662294c474c9a",
+            "name": "Video clip and channel information from ESPN.",
+            "url": "http:\/\/www.espn.com\/\/video\/channels\/{categoryId}\/clips\/{clipId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "categoryId",
+                    "description": "Specific video channel ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "clipId",
+                    "description": "Specific video clip ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        },
+        {
+            "id": "ce7c1b00c114dd354c4117ca588094ea",
+            "name": "Returns schedule and scores information.",
+            "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/events\/{eventId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sportName",
+                    "description": "Sport name",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "leagueName",
+                    "description": "League \/ organizing body within the sport.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "eventId",
+                    "description": "Specific event ID.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "seasontype",
+                    "description": "Value corresponding to either preseason, regular season, or postseason games. Accepts string (pre\/reg\/post) values.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "weeks",
+                    "description": "Integer. Only applicable to college and NFL football. When used with dates parameter, returns games for that particular week.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enable",
+                    "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "disable",
+                    "description": "Comma separated list of node names to disable. Currently supports these values: audio, categories, keywords, mobileStory, related, and story.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dates",
+                    "description": "Used to retrieve stories from a specific date, in YYYYMMDD format.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lang",
+                    "description": "Language to receive content in.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_accept",
+                    "description": "Payload output format",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "rawModeData": ""
+        }
+    ]
+}
