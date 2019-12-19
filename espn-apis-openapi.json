@@ -1,0 +1,637 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "ESPN APIs",
+        "description": "Explore the ESPN API by making live calls. ",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/www.espn.com\/"
+    ],
+    "paths": {
+        "\/sports\/{sportName}\/{leagueName}\/": {
+            "get": {
+                "summary": "Sports and leagues supported in the ESPN API.",
+                "description": "",
+                "operationId": "SportsSportsAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/{newsSection}\/{sportName}\/{leagueName}\/news\/{method}\/{headlineId}": {
+            "get": {
+                "summary": "Latest sports news and analysis from ESPN.",
+                "description": "",
+                "operationId": "HeadlinesHeadlinesAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "newsSection",
+                        "in": "path",
+                        "description": "News section"
+                    },
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "method",
+                        "in": "path",
+                        "description": "Type of stories to retrieve."
+                    },
+                    {
+                        "name": "headlineId",
+                        "in": "path",
+                        "description": "ID of specific story to retrieve."
+                    },
+                    {
+                        "name": "dates",
+                        "in": "query",
+                        "description": "Used to retrieve stories from a specific date, in YYYYMMDD format."
+                    },
+                    {
+                        "name": "teams",
+                        "in": "query",
+                        "description": "Retrieve stories about a particular team (teamId)"
+                    },
+                    {
+                        "name": "athletes",
+                        "in": "query",
+                        "description": "Retrieves stories about a particular player\/athlete (athleteId)"
+                    },
+                    {
+                        "name": "events",
+                        "in": "query",
+                        "description": "Retrieves stories about a particular event (eventId)"
+                    },
+                    {
+                        "name": "enable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting)."
+                    },
+                    {
+                        "name": "disable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to disable. Currently supports these values: audio, categories, keywords, mobileStory, related, and story."
+                    },
+                    {
+                        "name": "insider",
+                        "in": "query",
+                        "description": "Toggles whether or not to include premium (ESPN Insider) content."
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language to receive content in."
+                    },
+                    {
+                        "name": "region",
+                        "in": "query",
+                        "description": "Region of editorial focus. Only applicable for soccer and spanish language content."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset from zero of where to start results."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sports\/{sportName}\/{leagueName}\/athletes\/{athleteId}": {
+            "get": {
+                "summary": "Athlete stats and information from ESPN.",
+                "description": "",
+                "operationId": "AthletesAthletesAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "athleteId",
+                        "in": "path",
+                        "description": "Specific athlete ID."
+                    },
+                    {
+                        "name": "groups",
+                        "in": "query",
+                        "description": "Used to specify a specific group or division within the league\/organizing body."
+                    },
+                    {
+                        "name": "enable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting)."
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language to receive content in."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset from zero of where to start results."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sports\/{sportName}\/{leagueName}\/teams\/{teamId}": {
+            "get": {
+                "summary": "Sports team stats and information from ESPN.",
+                "description": "",
+                "operationId": "TeamsTeamsAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "teamId",
+                        "in": "path",
+                        "description": "Specific team ID."
+                    },
+                    {
+                        "name": "enable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting)."
+                    },
+                    {
+                        "name": "groups",
+                        "in": "query",
+                        "description": "Used to specify a specific group or division within the league\/organizing body."
+                    },
+                    {
+                        "name": "rostertype",
+                        "in": "query",
+                        "description": "Can be used to specify full or active roster. Only applicable to MLB. Subject to access tier."
+                    },
+                    {
+                        "name": "dates",
+                        "in": "query",
+                        "description": "Used to retrieve stories from a specific date, in YYYYMMDD format."
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language to receive content in."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset from zero of where to start results."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/now\/{method}": {
+            "get": {
+                "summary": "Stream of the latest content published on ESPN.com...",
+                "description": "Stream of the latest content published on ESPN.com .",
+                "operationId": "NowESPNNowAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "method",
+                        "in": "path",
+                        "description": "Type of stories to retrieve."
+                    },
+                    {
+                        "name": "leagues",
+                        "in": "query",
+                        "description": "String denoting a particular sport category or sports league\/organizing body. Not applicable to \/top and \/popular methods."
+                    },
+                    {
+                        "name": "content",
+                        "in": "query",
+                        "description": "Content types to retrieve. Not applicable to \/top and \/popular methods."
+                    },
+                    {
+                        "name": "teams",
+                        "in": "query",
+                        "description": "Retrieve stories about a particular team (teamId)"
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sports\/{sportName}\/{leagueName}\/standings": {
+            "get": {
+                "summary": "The latest league and divisional standings from ES...",
+                "description": "The latest league and divisional standings from ESPN.",
+                "operationId": "StandingsStandingsAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "enable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting)."
+                    },
+                    {
+                        "name": "groups",
+                        "in": "query",
+                        "description": "Used to specify a specific group or division within the league\/organizing body."
+                    },
+                    {
+                        "name": "dates",
+                        "in": "query",
+                        "description": "Used to retrieve stories from a specific date, in YYYYMMDD format."
+                    },
+                    {
+                        "name": "seasontype",
+                        "in": "query",
+                        "description": "Value corresponding to either preseason, regular season, or postseason games. Accepts string (pre\/reg\/post) values."
+                    },
+                    {
+                        "name": "flat",
+                        "in": "query",
+                        "description": "Returns a flattened result set in order to show all teams ranked from first to last without breaking them out into divisions. Only valid with team-based sports."
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language to receive content in."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset from zero of where to start results."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sports\/{sportName}\/{leagueName}\/news\/notes\/{noteId}": {
+            "get": {
+                "summary": "Exclusive factoids produced by ESPN's Stats and In...",
+                "description": "Exclusive factoids produced by ESPN's Stats and Information Group.",
+                "operationId": "ResearchNotesResearchNotesAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "teams",
+                        "in": "query",
+                        "description": "Retrieve stories about a particular team (teamId)"
+                    },
+                    {
+                        "name": "athletes",
+                        "in": "query",
+                        "description": "Retrieves stories about a particular player\/athlete (athleteId)"
+                    },
+                    {
+                        "name": "events",
+                        "in": "query",
+                        "description": "Retrieves stories about a particular event (eventId)"
+                    },
+                    {
+                        "name": "noteId",
+                        "in": "path",
+                        "description": "Retrieve content for a specific note."
+                    },
+                    {
+                        "name": "dates",
+                        "in": "query",
+                        "description": "Used to retrieve stories from a specific date, in YYYYMMDD format."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset from zero of where to start results."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sports\/olympics\/medals": {
+            "get": {
+                "summary": "Medal counts and competition information from the ...",
+                "description": "Medal counts and competition information from the Olympic Games.",
+                "operationId": "MedalsMedalsAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "dates",
+                        "in": "query",
+                        "description": "Used to retrieve stories from a specific date, in YYYYMMDD format."
+                    },
+                    {
+                        "name": "season",
+                        "in": "query",
+                        "description": "The season of the Olympic Games. Supported values are summer or winter."
+                    },
+                    {
+                        "name": "enable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting)."
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language to receive content in."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limits the number of results returned."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset from zero of where to start results."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/audio\/{method}\/{podcastId}\/{recordingId}": {
+            "get": {
+                "summary": "Audio podcasts and clips from ESPN.",
+                "description": "",
+                "operationId": "AudioAudioAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "method",
+                        "in": "path",
+                        "description": "Type of stories to retrieve."
+                    },
+                    {
+                        "name": "podcastId",
+                        "in": "path",
+                        "description": "Specific Podcast ID."
+                    },
+                    {
+                        "name": "recordingId",
+                        "in": "path",
+                        "description": "Specific audio recording (clip) ID."
+                    },
+                    {
+                        "name": "insider",
+                        "in": "query",
+                        "description": "Toggles whether or not to include premium (ESPN Insider) content."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/video\/channels\/{categoryId}\/clips\/{clipId}": {
+            "get": {
+                "summary": "Video clip and channel information from ESPN.",
+                "description": "",
+                "operationId": "VideoVideoAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "categoryId",
+                        "in": "path",
+                        "description": "Specific video channel ID."
+                    },
+                    {
+                        "name": "clipId",
+                        "in": "path",
+                        "description": "Specific video clip ID."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "\/sports\/{sportName}\/{leagueName}\/events\/{eventId}": {
+            "get": {
+                "summary": "Returns schedule and scores information.",
+                "description": "",
+                "operationId": "EventsScore&SchedulesAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sportName",
+                        "in": "path",
+                        "description": "Sport name"
+                    },
+                    {
+                        "name": "leagueName",
+                        "in": "path",
+                        "description": "League \/ organizing body within the sport."
+                    },
+                    {
+                        "name": "eventId",
+                        "in": "path",
+                        "description": "Specific event ID."
+                    },
+                    {
+                        "name": "seasontype",
+                        "in": "query",
+                        "description": "Value corresponding to either preseason, regular season, or postseason games. Accepts string (pre\/reg\/post) values."
+                    },
+                    {
+                        "name": "weeks",
+                        "in": "query",
+                        "description": "Integer. Only applicable to college and NFL football. When used with dates parameter, returns games for that particular week."
+                    },
+                    {
+                        "name": "enable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to enable. Currently supports 'inlines' (access tier permitting)."
+                    },
+                    {
+                        "name": "disable",
+                        "in": "query",
+                        "description": "Comma separated list of node names to disable. Currently supports these values: audio, categories, keywords, mobileStory, related, and story."
+                    },
+                    {
+                        "name": "dates",
+                        "in": "query",
+                        "description": "Used to retrieve stories from a specific date, in YYYYMMDD format."
+                    },
+                    {
+                        "name": "lang",
+                        "in": "query",
+                        "description": "Language to receive content in."
+                    },
+                    {
+                        "name": "_accept",
+                        "in": "query",
+                        "description": "Payload output format"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
