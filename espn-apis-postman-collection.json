@@ -1,5 +1,5 @@
 {
-    "id": "ba194a4b77738121ce8ce3efeb5af24e",
+    "id": "4c5414379f747b40013baf4d48ba1729",
     "name": "ESPN APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b5ab2c44496b4b710415b09dc00b83f0",
+            "id": "4b498063fb122a6d6db58c64623be97c",
             "name": "Sports and leagues supported in the ESPN API.",
             "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "9109a4b3727b6705ff090ad340736c20",
+            "id": "c565a4c353c0577bde4a90a96d2b9cc6",
             "name": "Latest sports news and analysis from ESPN.",
             "url": "http:\/\/www.espn.com\/\/{newsSection}\/{sportName}\/{leagueName}\/news\/{method}\/{headlineId}",
             "description": "",
@@ -194,11 +194,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "34139112e89360e68833a69223959567",
+            "id": "56e4fbf9cc69132998d8c5a75230d7d9",
             "name": "Athlete stats and information from ESPN.",
             "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/athletes\/{athleteId}",
             "description": "",
@@ -281,11 +281,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "7c494c51a60554d038f1ee38fa8861fe",
+            "id": "45dd0433885302de6d4b3d114b9f960e",
             "name": "Sports team stats and information from ESPN.",
             "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/teams\/{teamId}",
             "description": "",
@@ -382,11 +382,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "74ff373139feae28bf8b684eb4938e4c",
+            "id": "ed286340d98d19902c03b73bd73e544e",
             "name": "Stream of the latest content published on ESPN.com...",
             "url": "http:\/\/www.espn.com\/\/now\/{method}",
             "description": "Stream of the latest content published on ESPN.com .",
@@ -441,11 +441,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "58ffc66c6072d17be7bbdc4809a68d9f",
+            "id": "d18ee44855cfc533359dab9c7fb44518",
             "name": "The latest league and divisional standings from ES...",
             "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/standings",
             "description": "The latest league and divisional standings from ESPN.",
@@ -542,11 +542,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "4d535e8056d1945cedd62afbfe6b874d",
+            "id": "15fd16997f886a28575da9269510724f",
             "name": "Exclusive factoids produced by ESPN's Stats and In...",
             "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/news\/notes\/{noteId}",
             "description": "Exclusive factoids produced by ESPN's Stats and Information Group.",
@@ -636,11 +636,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "1277e04489e1d0c5ab6a5f79638da525",
+            "id": "90103792a29ef3761924689c43949a23",
             "name": "Medal counts and competition information from the ...",
             "url": "http:\/\/www.espn.com\/\/sports\/olympics\/medals",
             "description": "Medal counts and competition information from the Olympic Games.",
@@ -709,11 +709,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "3093a6670b8c1cd01edb9c584cd392c5",
+            "id": "90a165e8c5db560423047d5463b9037c",
             "name": "Audio podcasts and clips from ESPN.",
             "url": "http:\/\/www.espn.com\/\/audio\/{method}\/{podcastId}\/{recordingId}",
             "description": "",
@@ -768,11 +768,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "8c0a4217e57aaf1091d662294c474c9a",
+            "id": "1e44a409ad2a2957fcec44a0c246ca8a",
             "name": "Video clip and channel information from ESPN.",
             "url": "http:\/\/www.espn.com\/\/video\/channels\/{categoryId}\/clips\/{clipId}",
             "description": "",
@@ -813,11 +813,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         },
         {
-            "id": "ce7c1b00c114dd354c4117ca588094ea",
+            "id": "e7d8123b5c4588e99d3f747c46459b3c",
             "name": "Returns schedule and scores information.",
             "url": "http:\/\/www.espn.com\/\/sports\/{sportName}\/{leagueName}\/events\/{eventId}",
             "description": "",
@@ -907,7 +907,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "ba194a4b77738121ce8ce3efeb5af24e",
+            "collectionId": "4c5414379f747b40013baf4d48ba1729",
             "rawModeData": ""
         }
     ]
