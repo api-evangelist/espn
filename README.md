@@ -91,13 +91,12 @@ Authentication, trust centre, and vulnerability disclosure.
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.espn.com)
-- [Documentation](https://developer.espn.com/)
 - [Support](https://support.espn.com/hc/en-us)
 - [GitHub](https://github.com/espn)
 
 ## API Evangelist rating
 
-**Kin Score 7.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 7.0** — minimal · rubric 0.25.0 · scored 2026-10-23
 
 | Facet | Score |
 |---|---|
@@ -131,6 +130,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
 **Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
